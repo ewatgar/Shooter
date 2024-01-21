@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://0cp04wogkrit"]
+
+[ext_resource type="Texture2D" uid="uid://cn5p3so6suyyn" path="res://icon.svg" id="1_tqv2j"]
+[ext_resource type="Texture2D" uid="uid://cyve7de3n0rhn" path="res://graphics/car/main.png" id="2_fypwq"]
+[ext_resource type="PackedScene" uid="uid://cpp05dmuduix5" path="res://scenes/player/player.tscn" id="3_ofojy"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(302, 216)
+texture = ExtResource("1_tqv2j")
+
+[node name="Car" type="Sprite2D" parent="Logo"]
+position = Vector2(341, 90)
+scale = Vector2(0.629979, 0.630499)
+texture = ExtResource("2_fypwq")
+
+[node name="Player" parent="." instance=ExtResource("3_ofojy")]
+position = Vector2(3, -3.05176e-05)
